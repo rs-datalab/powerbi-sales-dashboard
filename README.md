@@ -1,116 +1,110 @@
-# 📊 Sales Performance Dashboard (Power BI)
+# Sales Performance Dashboard
 
 ## Overview
 
-This project is an interactive Power BI dashboard analyzing sales performance across products, customers, and regions. It provides a structured view of revenue trends, customer demographics, and top-performing products to support business decision-making.
+This project is an interactive Power BI dashboard that analyzes sales performance across products, customers, and regions. It provides a structured view of revenue trends, customer demographics, top-performing products, and key markets to support business decision-making.
 
----
+The dashboard is designed to present business information clearly and make it easy to explore sales performance through filters and visual breakdowns.
 
 ## Objective
 
 The goal of this project is to:
 
-* Track overall sales performance over time
-* Identify top-performing products and categories
-* Understand customer distribution across demographics
-* Analyze geographic revenue trends
-* Present insights in a clear, business-friendly dashboard
-
----
+- track overall sales performance over time
+- identify top-performing products and categories
+- understand customer distribution across demographics
+- analyze geographic revenue trends
+- present insights in a clear, business-friendly dashboard
 
 ## Dataset
 
-* Source: AdventureWorks sample dataset
-* Data includes:
+**Source:** AdventureWorks sample dataset
 
-  * Sales transactions
-  * Product details (category, pricing)
-  * Customer demographics (age, gender)
-  * Geographic information (country/region)
+The dataset includes:
 
----
+- sales transactions
+- product details such as category and pricing
+- customer demographic data such as age and gender
+- geographic information such as country and region
 
 ## Tools
 
-* Power BI
-* DAX (for measures and calculations)
-* Data modeling (relationships between tables)
-
----
+- Power BI
+- DAX
+- data modeling
 
 ## What This Project Does
 
-### 1. KPI Monitoring
+This dashboard brings together several business-facing views of sales performance:
 
-* Displays total sales as a key performance indicator
-* Enables quick assessment of overall business performance
+- displays total sales as a headline KPI
+- visualizes sales trends over time
+- highlights top-performing products by revenue
+- shows sales concentration across product categories
+- breaks down revenue and customer activity by age group
+- compares revenue by gender
+- compares revenue across top-performing countries
+- supports interactive exploration through filters for year, month, and product category
 
-### 2. Sales Trend Analysis
+## Highlights
 
-* Visualizes revenue over time
-* Helps identify growth patterns and fluctuations
+The dashboard supports several high-level observations:
 
-### 3. Product Performance
-
-* Highlights top products by revenue contribution
-* Shows distribution of sales across product categories
-
-### 4. Customer Insights
-
-* Analyzes revenue and customer distribution by age group
-* Breaks down revenue by gender
-
-### 5. Geographic Analysis
-
-* Compares revenue across top-performing countries
-* Identifies key markets driving sales
-
----
-
-## Key Insights
-
-* Revenue shows an overall upward trend with periodic fluctuations
-* A small number of products contribute a significant share of total sales
-* Sales are heavily concentrated in a single product category
-* Certain age groups contribute more significantly to revenue
-* A few key countries drive the majority of sales
-
----
+- revenue shows an overall upward trend with periodic fluctuations
+- a small number of products contribute a significant share of total sales
+- sales are heavily concentrated in one product category
+- certain age groups contribute more strongly to revenue than others
+- a small number of countries drive a large share of total sales
 
 ## Outputs
 
-* Interactive Power BI dashboard (`.pbix` file)
-* Visual breakdowns of:
+This project includes:
 
-  * Sales trends
-  * Product performance
-  * Customer demographics
-  * Geographic distribution
+- `AdventureWorks Dashboard.pbix` — interactive Power BI dashboard
+- `AdventureWorks Dashboard.pdf` — exported dashboard preview
 
----
+The dashboard includes views for:
+
+- total sales KPI
+- sales trends over time
+- top products by revenue
+- product category breakdown
+- customer demographics
+- country-level revenue analysis
+
+## Project Structure
+
+```text
+powerbi-sales-dashboard/
+├── dashboard/
+│   └── AdventureWorks Dashboard.pbix
+├── screenshots/
+│   └── AdventureWorks Dashboard.pdf
+└── README.md
+```
+
+## How to Run
+
+1. Open `AdventureWorks Dashboard.pbix` in Power BI Desktop.
+2. Use the filters for:
+   - Year
+   - Month
+   - Product Category
+3. Interact with the visuals to explore different segments of the data.
+4. Use the PDF preview if you want a quick static overview of the dashboard layout.
 
 ## Notes
 
-* The dashboard is designed for clarity and usability, following a structured layout:
-
-  * **Overview → Trends → Breakdown → Details**
-* Visuals were formatted to ensure consistency and readability
-* Measures were created using DAX to support aggregation and filtering
-
----
-
-## How to Use
-
-1. Open the `.pbix` file in Power BI Desktop
-2. Use the filters (Year, Month, Product Category) to explore the data
-3. Interact with visuals to drill into specific segments
-
----
+- The dashboard is designed with a clear structure: **Overview → Trends → Breakdown → Details**
+- Visuals were formatted to improve readability and consistency.
+- DAX measures were used to support aggregation and filtering.
+- This project focuses on dashboard design and business-facing reporting rather than advanced forecasting.
 
 ## Future Improvements
 
-* Add profit-based analysis (if cost data is available)
-* Include more advanced KPIs (e.g. customer lifetime value)
-* Enhance interactivity with drill-through pages
+Potential next steps include:
 
----
+- adding profit-based analysis if cost data is available
+- including more advanced KPIs such as profit margin or customer lifetime value
+- adding drill-through pages for product, region, or customer detail
+- expanding the model to support more granular time analysis
